@@ -1,33 +1,24 @@
 # E-Commerce End-to-End Business Intelligence & Customer Analytics
 
-An end-to-end e-commerce analytics portfolio project using **MySQL,
-Python, Microsoft Excel, and Power BI**. The project brings together
-data preparation, SQL-based analysis, notebook-based exploration,
-spreadsheet analysis, and interactive business dashboards to examine
-sales, profitability, customers, retention, regional performance, and
-operations.
+An end-to-end E-Commerce Business Intelligence project built using **MySQL, Python, Microsoft Excel, and Power BI**.
+
+This project focuses on analysing e-commerce business performance, customer behaviour, profitability, retention, regional operations, and business opportunities through data analysis and interactive dashboards.
 
 ## Project Overview
 
-The project uses a multi-table e-commerce dataset containing order,
-customer, and product information. The workflow is organised into
-separate stages so that the data and deliverables for each tool can be
-reviewed independently.
+The project follows an end-to-end analytics workflow, starting from raw data exploration and cleaning to business analysis, dashboard development, and actionable insights.
 
-### Tools Used
+### Tools & Technologies
 
--   **MySQL** --- database setup, raw-data profiling, data cleaning,
-    validation, and business analysis.
--   **Python** --- analysis in a Jupyter Notebook using the project
-    notebook.
--   **Microsoft Excel** --- business analysis and executive dashboard.
--   **Power BI** --- interactive dashboards for executive, sales,
-    customer, regional, and retention analysis.
+- **MySQL:** Database management, data profiling, data cleaning, validation, and business analysis.
+- **Python:** Data analysis using Jupyter Notebook.
+- **Microsoft Excel:** Business analysis and executive dashboard.
+- **Power BI:** Interactive dashboards and business performance reporting.
 
 ## Repository Structure
 
-``` text
-Ecommerce_End_to_End_Business_Intelligence/
+```text
+E-Commerce-End-to-End-Business-Intelligence/
 │
 ├── 01_Dataset/
 │   ├── 01_Raw_Data/
@@ -56,123 +47,112 @@ Ecommerce_End_to_End_Business_Intelligence/
 │   └── 05_Customer_Retention_Insights.png
 │
 └── 06_Documentation/
-    ├── Project_Methodology.md
-    ├── KPI_Definitions.md
-    ├── Business_Insights.md
-    └── Data_Cleaning_Report.md
 ```
 
-## Analysis Areas
+## Business Analysis Areas
 
-The project examines the following business areas:
+The project covers the following analytical areas:
 
--   Overall sales and profit performance
--   Yearly and monthly sales trends
--   Product category and sub-category performance
--   Customer sales, profit, and order behaviour
--   Customer retention and cohort analysis
--   RFM-based customer segmentation
--   Regional sales and profitability
--   Shipping and payment-mode performance
--   Discount-band profitability
--   Business findings, risks, and recommendations
+1. Sales Analysis
+2. Profitability Analysis
+3. Product Analysis
+4. Customer Analysis
+5. Customer Retention Analysis
+6. RFM Analysis
+7. Regional Analysis
+8. Shipping & Operations Analysis
+9. Returns Analysis
+10. Discount Analysis
+11. Sales Channel Analysis
+12. Business Investigation
+13. Inventory Analysis
+14. Sales Forecasting
+15. Customer Churn Prediction
+16. Scenario & What-If Analysis
 
-## Dashboard Snapshot Results
+## Key Business Metrics
 
-The following figures are displayed in the supplied Power BI dashboard
-screenshots. They are dashboard-reported values and have not been
-independently recalculated in this README.
+| Metric | Reported Result |
+|---|---:|
+| Total Sales | ₹53.44 Million |
+| Total Profit | ₹3.61 Million |
+| Total Orders | 44,930 |
+| Total Customers | 4,000 |
+| Profit Margin | 6.76% |
 
-  KPI                   Dashboard value
-  ------------------- -----------------
-  Total Sales                   ₹53.44M
-  Total Profit                   ₹3.61M
-  Total Orders                      45K
-  Total Customers                    4K
-  Profit Margin                   6.76%
-  Month-1 Retention              32.31%
-  Month-3 Retention              28.55%
-  Month-6 Retention              28.94%
+*Figures are based on the project's reported dashboard results.*
 
 ## Power BI Dashboards
 
-### Executive Overview
+### 1. Executive Overview
 
 ![Executive Overview](05_PowerBI/01_Executive_Overview.png)
 
-### Sales Analysis
+### 2. Sales Analysis
 
 ![Sales Analysis](05_PowerBI/02_Sales_Analysis.png)
 
-### Customer Analysis
+### 3. Customer Analysis
 
 ![Customer Analysis](05_PowerBI/03_Customer_Analysis.png)
 
-### Regional & Operations
+### 4. Regional & Operations Dashboard
 
-![Regional &
-Operations](05_PowerBI/04_Regional_Operations_Dashboard.png)
+![Regional Operations](05_PowerBI/04_Regional_Operations_Dashboard.png)
 
-### Customer Retention & Insights
+### 5. Customer Retention Insights
 
 ![Customer Retention](05_PowerBI/05_Customer_Retention_Insights.png)
 
-## Excel Dashboard
+## Microsoft Excel Dashboard
 
 ![Excel Executive Dashboard](04_Excel/Excel_Executive_Dashboard.png)
 
 ## MySQL Project
 
-The MySQL work is divided into separate SQL files for:
+The MySQL project is organised into separate SQL files covering:
 
-1.  Database and raw-table setup
-2.  Raw-data exploration and profiling
-3.  Data cleaning
-4.  Data validation
-5.  Business analysis and investigation
+- Database and raw table creation
+- Raw data exploration and profiling
+- Data cleaning
+- Data validation
+- Business analysis and investigation
 
-The source data was imported into MySQL using **MySQL Workbench Table
-Data Import Wizard**. Follow the execution order described in
-`02_MySQL/README.md` and the SQL project notes. The SQL scripts were run
-and tested in the project environment by the author.
+Data was imported using MySQL Workbench's Table Data Import Wizard.
 
 ## Python Project
 
-The Python work is provided as a Jupyter Notebook:
+The Python analysis is available in the Jupyter Notebook:
 
--   `03_Python/ecommerce.ipynb`
+`03_Python/ecommerce.ipynb`
 
-Open the notebook in Jupyter Notebook, JupyterLab, or a compatible
-notebook environment. Check the dataset paths in the notebook and update
-them if your local folder location differs.
+## Dataset
 
-## Data
+The dataset is organised into two separate folders:
 
-The `01_Dataset` directory separates the original raw files from the
-cleaned files used for analysis.
+- `01_Raw_Data` — Original dataset files.
+- `02_Cleaned_Data` — Cleaned dataset files used for analysis.
 
--   `01_Raw_Data` --- original source files.
--   `02_Cleaned_Data` --- cleaned versions prepared for analysis.
+## Project Documentation
 
-Dataset source, usage rights, and redistribution conditions should be
-checked before publishing the data publicly. Do not upload confidential
-or personally identifiable records unless you have permission to share
-them.
+The documentation folder contains supporting project information, including:
 
-## How to Explore the Project
+- Project methodology
+- KPI definitions
+- Data cleaning report
+- Business insights
 
-1.  Review this README for the project overview and dashboard results.
-2.  Open `02_MySQL/README.md` for the SQL execution sequence and
-    data-import instructions.
-3.  Review the SQL scripts in their numbered folders.
-4.  Open `03_Python/ecommerce.ipynb` to inspect the Python notebook.
-5.  View the Excel and Power BI dashboard screenshots in their
-    respective folders.
-6.  Read the documents in `06_Documentation` for methodology, KPI
-    definitions, cleaning notes, and business insights.
+## Project Objective
 
-## Notes and Scope
+The objective of this project is to transform raw e-commerce data into meaningful business insights by applying data analytics techniques across multiple tools.
 
+It demonstrates an end-to-end workflow involving data preparation, analytical querying, business investigation, customer analytics, and dashboard reporting.
+
+---
+
+**Tools:** MySQL | Python | Microsoft Excel | Power BI
+
+**Project Type:** End-to-End Business Intelligence & Customer Analytics
 -   The Excel and Power BI folders contain dashboard screenshots for
     portfolio review; the full Excel workbook and Power BI `.pbix` file
     are not included in this repository package.
